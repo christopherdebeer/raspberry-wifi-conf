@@ -6,6 +6,13 @@ html, body {
     position: relative;
 }
 
+.banner {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
 .page-header {
     width: 100%;
     height: 50px; line-height: 50px;
@@ -49,20 +56,15 @@ html, body {
     margin-bottom: 10px;
 
     width: 100%; max-width: 400px;
-    height: calc(100% - 5px);
-    border-bottom: 2px solid white;
-
-    background: #ffffff;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-    column-count: 2;
+    height: auto;
+    overflow: auto;
 }
 
 .scan-result {
     color: black;
     position: relative;
-    height: 40px; line-height: 14px;
+    height: 40px;
+    width: 50%;
 
     -webkit-transition: all 0.3s ease;
     -moz-transition:    all 0.3s ease;
@@ -76,18 +78,14 @@ html, body {
     color: goldenrod;
 }
 .scan-result .ssid {
-    position: absolute;
-    top: 0; left: 20%;
-    width: 80%; height: 100%;
+    float: left;
 }
 .scan-result .secure {
     color: goldenrod;
-    padding-left: 5%;
+    margin: 1em;
 }
 .scan-result .signal_stength {
-    position: absolute;
-    top: 0; left: 85%;
-    width: 10%; height: 100%;
+    float: left;
 }
 
 /*

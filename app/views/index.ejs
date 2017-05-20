@@ -2,7 +2,7 @@
 <html lang="en" ng-app="RpiWifiConfig">
 
 <head>
-    <title>Rpi Wifi Config</title>
+    <title>TC1000 Connect</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -16,12 +16,7 @@
 <body ng-controller = "AppController"
       ng-keyup      = "$event.keyCode == 27 ? change_selection(null) : ''">
 
-<img src="img/truco.jpg" style="
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
-">
+    <img class="banner" src="img/truco.jpg" style="">
 
     <div class = "page-header">
         <a href = "#" ng-click = "rescan()" ng-class = "{ 'active': scan_running }">
