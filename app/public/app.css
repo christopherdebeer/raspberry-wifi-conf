@@ -15,19 +15,17 @@ html, body {
     text-align: center;
 
     -webkit-user-select: none;
+    color: black;
 
-    background: #000000; /*#039be5;*/
-    border-bottom: 2px solid #ffffff;
 }
 .page-header a {
     position: absolute;
     right: 0; margin: 8px 5px;
     text-decoration: none;
 
-    color: white;
+    color: black;
     width: 30px; height: 30px;
     border-radius: 100%;
-    border: 2px solid white;
 
     -webkit-transition: all 0.3s ease;
     -moz-transition:    all 0.3s ease;
@@ -35,13 +33,9 @@ html, body {
     -o-transition:      all 0.3s ease;
     transition:         all 0.3s ease;
 }
-.page-header a:hover {
-    color: yellow;
-    background: #444444;
-}
+.page-header a:hover,
 .page-header .active {
-    color: yellow;
-    background: #444444;
+    color: goldenrod;
 }
 .page-header a i {
     font-size: 18pt;
@@ -70,7 +64,7 @@ html, body {
 }
 
 .scan-result {
-    color: white;
+    color: black;
     position: relative;
     height: 40px; line-height: 40px;
 
@@ -80,17 +74,10 @@ html, body {
     -o-transition:      all 0.3s ease;
     transition:         all 0.3s ease;
     cursor: pointer;
-
-    border-bottom: 2px solid #666666;
-    background: #222222;
 }
-.scan-result:hover {
-    color: yellow;
-    background: #444444;
-}
+.scan-result:hover,
 .scan-result.selected {
-    color: yellow;
-    background: #888888;
+    color: goldenrod;
 }
 .scan-result .ssid {
     position: absolute;
@@ -98,7 +85,7 @@ html, body {
     width: 80%; height: 100%;
 }
 .scan-result .secure {
-    color: white;
+    color: goldenrod;
     padding-left: 3px;
 }
 .scan-result .signal_stength {
@@ -174,7 +161,7 @@ html, body {
     top: 0; left: 0;
     width: 100%; height: 100%;
 
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.25);
 
     -webkit-transition: all 0.3s ease;
     -moz-transition:    all 0.3s ease;
@@ -200,9 +187,10 @@ html, body {
     width: 320px;
     height: 150px;
 
-    background: rgba(0,0,0,1.0);
-    border: 2px solid #666666;
+    background: white;
+    box-shadow: 5px 5px 0 black;
 }
+
 
 .rwc-password-entry-container .box input {
     width: 90%;
@@ -211,17 +199,19 @@ html, body {
     font-size: 18pt;
     border: 0;
 
+    color: #d6d2d2;
     margin-left: 5%;
     margin-top: 15px;
+    border: 2px solid #d6d2d2;
+    padding: 0.4em;
+    box-sizing: border-box;
 }
 
 .rwc-password-entry-container .box .btn {
     width: 130px;
     height: 40px; line-height: 40px;
     text-align: center;
-
-    border: 2px solid #000000;
-
+    color: white;
     position: absolute;
 
     -webkit-transition: all 0.3s ease;
@@ -233,12 +223,14 @@ html, body {
     cursor: pointer;
 }
 .btn-cancel {
-    background: #881111;
+    background: rgba(245, 7, 7, 0.52);
+    box-shadow: 5px 5px red;
     top: 90px; left: 20px;
 }
 .btn-ok {
     top: 90px; left: 170px;
-    background: #118811;
+    background: rgba(7, 245, 7, 0.52);
+    box-shadow: 5px 5px green;
 }
 .btn-cancel:hover {
     background: #ff2222;
