@@ -61,6 +61,7 @@ async.series([
     //    server up. It uses a small angular application which allows
     //    us to choose the wifi of our choosing.
     function start_http_server(next_step) {
+	console.log( "Running ./app/api.js...")
         require("./app/api.js")(wifi_manager, next_step);
     },
 

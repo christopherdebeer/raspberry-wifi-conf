@@ -73,5 +73,7 @@ module.exports = function(wifi_manager, callback) {
     });
 
     // Listen on our server
-    app.listen(config.server.port);
+    app.listen(config.server.port, function() {
+	console.log( "Nodejs server listening on port", config.server.port )
+    });
 }
